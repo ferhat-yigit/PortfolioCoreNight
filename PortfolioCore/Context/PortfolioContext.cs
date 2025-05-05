@@ -8,7 +8,7 @@ namespace PortfolioCore.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=ASUS-PROART;initial Catalog=PortfolioNightDb;integrated security=true;");
+            optionsBuilder.UseSqlServer("Server=PC;initial Catalog=PortfolioNightDb;integrated security=true;");
         }
         public DbSet<Contact> Contacts{ get; set; }
         public DbSet<Education> Educations{ get; set; }
