@@ -1,0 +1,23 @@
+﻿@model List<PortfolioCore.Entities.Feature>
+
+<section id="hero" class="hero section light-background">
+     @foreach (var item in Model)
+            {
+    <img src="@item.ImageUrl" alt="">
+
+    <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+           
+                <div class="col-lg-9">
+                    <h2>@item.Name</h2>
+                    <p>Çalışma Alanlarım: <span class="typed" data-typed-items="@item.MyWorkArea">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+
+                    @await Component.InvokeAsync("_SocialMediaComponentPartial")                   
+                    
+                </div>
+           
+            </div>
+        </div>
+    }
+    </section>

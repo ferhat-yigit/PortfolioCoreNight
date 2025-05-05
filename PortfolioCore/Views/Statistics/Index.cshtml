@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>@ViewBag.v0</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 mb-6">
+            <div class="alert alert-primary">Toplam Yetenek: @ViewBag.v1</div>
+            <div class="alert alert-info">Toplam Yetenek Puanı: @ViewBag.v2</div>
+            <div class="alert alert-success">Yetenek Değeri 70'den Büyük Olanlar: @ViewBag.v3</div>
+            <div class="alert alert-warning">Yeteneklerin Ortalaması: @ViewBag.v4</div>
+            <div class="alert alert-dark">Toplam Deneyim: @ViewBag.v5</div>
+        </div>
+        <div class="col-md-6 mb-6">
+            <div class="alert alert-info">Toplam Proje: @ViewBag.v8</div>
+            <div class="alert alert-success">Mobile Developer Sayısı: @ViewBag.v6</div>
+            <div class="alert alert-warning">Mobil Proje Sayısı: @ViewBag.v7</div>
+            <div class="alert alert-dark">Toplam Referans: @ViewBag.v9</div>
+            <div class="alert alert-primary">Toplam Kategori: @ViewBag.v10</div>
+        </div>
+    </div>
+</div>
+
+

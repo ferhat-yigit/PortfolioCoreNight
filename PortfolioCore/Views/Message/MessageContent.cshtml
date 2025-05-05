@@ -1,0 +1,41 @@
+﻿@model Message
+
+@{
+    ViewData["Title"] = "MessageContent";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-description">Mesaj Detay Sayfası</p>
+
+            <form class="forms-sample">
+                <input type="hidden" asp-for="MessageId" />
+
+                <div class="form-group">
+                    <label>Adı Soyadı</label>
+                    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+
+                <div class="form-group">
+                    <label>Mail Adresi</label>
+                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+
+                <div class="form-group">
+                    <label>Gönderim Tarihi</label>
+                    @Html.TextBoxFor(x => x.SendDate, new { @class = "form-control", @readonly = "readonly" })
+                </div>
+
+                <div class="form-group">
+                    <label>Mesaj Detayı</label>
+                    @Html.TextAreaFor(x => x.MessageDetail, new { @class = "form-control", rows = "6", cols = "3", @readonly = "readonly" })
+                </div>
+
+                <a asp-action="MessageList" class="btn btn-primary mr-2">İletişim Sayfası</a>
+            </form>
+        </div>
+    </div>
+</div>
+
