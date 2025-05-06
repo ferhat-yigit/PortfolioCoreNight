@@ -43,4 +43,12 @@ Kullanıcı, bu bölümde sahip olduğu deneyim bilgilerini görüntüleyebilir.
 ![17](https://github.com/user-attachments/assets/1e38a9a9-79aa-4f77-bd50-95c9766cf092)
 ![18](https://github.com/user-attachments/assets/8e35849d-7277-4cb3-aeca-e16f6812258d)
 
+## 👨‍💻 Geliştirici
 
+- <Ferhat Yiğit>
+- https://www.linkedin.com/in/ferhatyigit/
+- https://www.ferhatyigit.com/
+  
+
+##
+---
